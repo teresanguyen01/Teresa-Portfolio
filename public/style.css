@@ -4,11 +4,13 @@
     box-sizing: border-box;
     text-decoration: none; 
     background: transparent; 
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background: #303655;
-    color: white; 
+    background: #ffffff;
+    color: black; 
+    font-family: '';
     overflow: hidden;
     overflow-y: scroll; 
 }

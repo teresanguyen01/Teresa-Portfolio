@@ -1,4 +1,5 @@
 .navbar {
+    background: white;
     height: 5rem;
     width: 100vw;
     max-width: 75rem; 
@@ -30,8 +31,8 @@
 }
 
 .desktopMenuBtn {
-    background: white; 
-    color: black; 
+    background: #787ff6; 
+    color: white; 
     border: none; 
     display: flex; 
     align-items: center;

@@ -1,10 +1,14 @@
 import Navbar from "./components/NavBar/navbar";
 import React from 'react';
+import Intro from './components/Intro/intro';
+import Skills from "./components/Skills/skills";
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
+      <Intro/>
+      <Skills/>
     </div>
   );
 }
