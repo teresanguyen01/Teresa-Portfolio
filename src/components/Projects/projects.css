@@ -1,0 +1,180 @@
+#projects {
+    padding: 4rem 2rem;
+    background-color: #002f69;
+    color: white;
+}
+
+.projectsText {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.aboutTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0087ff;
+    margin-bottom: 1rem;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially slightly moved down */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.aboutSubtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially slightly moved down */
+    transition: opacity 0.5s ease-out 0.5s, transform 0.5s ease-out 0.5s; /* Delay the transition */
+}
+
+.projectContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 2rem; /* Gap between boxes */
+    padding: 2rem 8rem; 
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially slightly moved down */
+    transition: opacity 0.5s ease-out 1s, transform 0.5s ease-out 1s; /* Delay the transition */
+}
+
+.project {
+    background-color: #fff;
+    color: #00274d;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.projectImg {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.projectTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.projectDesc {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Gallery styles */
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%; /* Ensure the gallery takes the full width */
+    overflow: hidden; /* Hide any overflow */
+    position: relative;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially slightly moved down */
+}
+
+.galleryImageContainer {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.gallerySlide {
+    min-width: 100%; /* Each slide takes up full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.galleryImage {
+    width: 80vw;
+    height: 80vh; /* Ensure the image fits within the screen height */
+    max-height: 80vh; /* Ensure the image maintains aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+}
+
+.galleryCaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.galleryArrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.galleryArrow:hover {
+    color: #0087ff;
+}
+
+.galleryArrow.left {
+    left: 10px;
+}
+
+.galleryArrow.right {
+    right: 10px;
+}
+
+.highlight {
+    color: #0087ff;
+    font-weight: 500;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+    .projectContainer {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+
+    .gallery {
+        padding: 0 4rem; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .projectContainer {
+        grid-template-columns: 1fr; /* One column */
+    }
+
+    .gallery {
+        flex-direction: column; /* Stack arrows and image vertically */
+        padding: 0 2rem; /* Adjust padding for smaller screens */
+    }
+
+    .galleryArrow {
+        font-size: 1.5rem; /* Adjust arrow size for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+

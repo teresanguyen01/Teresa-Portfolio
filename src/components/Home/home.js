@@ -1,20 +1,31 @@
 import React from 'react';
+import { ReactTyped as Typed } from 'react-typed';
 import './home.css';
 
-export const Home = () => {
+const Home = () => {
   return (
     <section id="home">
-        <div className="homeContent">
-            <span className="hello">Hello, my name is</span>
-            <span className="myName">Teresa Nguyen.</span>
-            <span className="subTitle">Researcher, Developer, Engineer</span>
-            <span className="introPara">I currently am a <span className="highlightColor">Yale</span> student studying statistics, data science, and computer science. My passion lies in healthcare technology, where I aim to leverage engineering to <span className="highlightColor">enhance</span> and <span className="highlightColor">transform</span> lives.</span>
-            <a href="https://drive.google.com/file/d/1pQzWNzZ8uxveQasjbXoQbroWM7fx2vPa/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                <button className="btn">Resume</button>
-            </a>
-            </div>
+      <div className="homeContent">
+        <div className="hello fadeIn">
+          Hello, my name is
+        </div>
+        <div className="myName fadeIn">
+          Teresa Nguyen.
+        </div>
+        <div className="subTitle">
+          <Typed strings={['Researcher.', 'Developer.', 'Engineer.', 'Tech Enthusiast.']} typeSpeed={40} backSpeed={50} loop startDelay={1500} />
+        </div>
+        <div className="introPara fadeIn">
+          I currently am a <span className="highlightColor">Yale</span> student studying statistics, data science, and computer science. My passion lies in healthcare technology, where I aim to leverage engineering to <span className="highlightColor">enhance</span> and <span className="highlightColor">transform</span> lives.
+        </div>
+        <a href="https://drive.google.com/file/d/1pQzWNzZ8uxveQasjbXoQbroWM7fx2vPa/view?usp=sharing" className="btn">Resume</a>
+      </div>
     </section>
-  )
+  );
 }
 
 export default Home;
+
+
+
+

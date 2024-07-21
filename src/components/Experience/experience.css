@@ -1,0 +1,161 @@
+#experience {
+    color: white;
+    padding: 2rem;
+    padding-top: 5rem; 
+    max-width: 75rem;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.experienceTitle {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #0087ff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 100%;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially slightly moved down */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.experienceContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%; /* Ensures content takes up the remaining height */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially slightly moved down */
+    transition: opacity 0.5s ease-out 0.5s, transform 0.5s ease-out 0.5s; /* Delay the transition */
+}
+
+.experienceLeft {
+    flex: 1.5;
+    position: relative;
+    padding-left: 1rem;
+    margin-top:  5rem;
+    margin-left: 2rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.experienceLeft p {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    color: white; 
+    cursor: pointer;
+}
+
+.experienceLeft p.activeJob {
+    color: #0087ff;
+    border-left: 2px solid #0087ff; /* Add a border for the active job */
+    padding-left: 0.5rem; /* Adjust padding to fit the text */
+}
+
+.experienceRight {
+    flex: 2;
+    padding-left: 2rem;
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
+    margin-top: 3rem; 
+}
+
+.job {
+    margin-bottom: 2rem;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially slightly moved down */
+    transition: opacity 1s ease-out 1.5s, transform 1s ease-out 1.5s; /* Delay the transition */
+}
+
+.job h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0087ff;
+    margin-bottom: 0.5rem;
+}
+
+.job p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.71);
+    margin-bottom: 1rem;
+}
+
+.job ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    line-height: 1.5rem; 
+}
+
+.job ul li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.fadeIn {
+    opacity: 1 !important; /* Fully visible */
+    transform: translateY(0) !important; /* Move to initial position */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1024px) {
+    .experienceTitle {
+        font-size: 3rem;
+    }
+
+    .experienceContent {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .experienceLeft, .experienceRight {
+        width: 100%;
+        padding: 0;
+    }
+
+    .experienceLeft {
+        padding-bottom: 1rem;
+        padding-left: 0;
+    }
+
+    .job h3 {
+        font-size: 1.5rem;
+    }
+
+    .job p, .job ul li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Media query for even smaller screens, such as phones */
+@media (max-width: 768px) {
+    .experienceTitle {
+        font-size: 2.5rem;
+    }
+
+    .job h3 {
+        font-size: 1.2rem;
+    }
+
+    .job p, .job ul li {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+

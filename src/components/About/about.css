@@ -7,10 +7,15 @@
     margin: 0 auto;
     padding: 2.5rem;
     box-sizing: border-box;
+    min-height: calc(100vh - 4rem); /* Changed from height to min-height */
+    padding-top: 7rem;
 }
 
 .aboutText {
     width: 50%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .aboutTitle {
@@ -18,6 +23,9 @@
     font-weight: 600;
     margin-bottom: 1.5rem;
     color: rgb(0, 135, 255);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out 0.5s, transform 1s ease-out 0.5s;
 }
 
 .aboutDesc {
@@ -26,11 +34,14 @@
     max-width: 50rem;
     color: white;
     text-align: left;
-    line-height: 2; 
+    line-height: 2;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out 1s, transform 1s ease-out 1s;
 }
 
 .aboutDesc p {
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
 }
 
 .myPhoto {
@@ -38,20 +49,29 @@
     max-width: 30rem;
     object-fit: cover;
     margin-right: 5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
 
+.fadeIn {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 @media (max-width: 768px) {
     #about {
         flex-direction: column;
-        align-items: center; /* Center align items for better appearance */
-        text-align: center; /* Center align text for better readability */
+        align-items: center;
+        text-align: center;
+        padding-top: 2rem; /* Adjust padding for smaller screens */
     }
 
     .myPhoto {
         width: 100%;
-        max-width: 20rem; /* Adjust the size for smaller screens */
+        max-width: 20rem;
         margin-right: 0;
+        margin-bottom: 2rem; /* Add margin bottom for spacing */
     }
 
     .aboutText {
@@ -59,15 +79,32 @@
     }
 
     .aboutDesc {
-        padding: 0 1rem; /* Adjust padding for smaller screens */
+        padding: 0 1rem;
     }
 
     .aboutTitle {
-        padding: 2rem; 
-        font-size: 3rem; /* Adjust font size for smaller screens */
+        padding: 0; /* Remove padding */
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
     }
 
     .aboutDesc {
-        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        font-size: 0.9rem;
     }
 }
+
+@media (max-width: 480px) {
+    .aboutTitle {
+        font-size: 2rem; /* Further adjust font size for smaller screens */
+    }
+
+    .aboutDesc {
+        font-size: 0.8rem; /* Further adjust font size for smaller screens */
+    }
+
+    .myPhoto {
+        max-width: 15rem; /* Adjust image size for smaller screens */
+    }
+}
+
+
+

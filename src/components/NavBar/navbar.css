@@ -1,7 +1,7 @@
 .navbar {
     height: 5rem;
     width: 100vw;
-    max-width: 75rem; 
+    max-width: 80vw; 
     margin: 0 auto;
     padding: 1rem 2rem; 
     display: flex; 
@@ -23,7 +23,7 @@
 }
 
 .desktopMenu {
-    padding-top: 2rem; 
+    padding-top: 2rem;
 }
 
 .desktopMenuListItem {
@@ -73,12 +73,14 @@
     height: fit-content; 
     min-width: 15rem; 
     border-radius: 1rem; 
+    border: 2px solid white; 
     color: white; 
+    background-color: #002f69;
 }
 
 .listItem {
     color: white;
-    padding: 0.5rem 3rem; 
+    padding: 0.25rem 3rem; 
     margin: 0.25rem;
 }
 

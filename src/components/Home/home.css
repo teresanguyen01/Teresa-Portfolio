@@ -7,7 +7,6 @@
     position: relative;
 }
 
-
 .homeContent {
     height: 100vh; 
     width: 100vw; 
@@ -17,18 +16,27 @@
     display: flex;
     flex-direction: column; 
     justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+    text-align: left; /* Align text to the left */
+}
+
+.hello, .myName, .introPara, .btn {
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Shorter duration */
 }
 
 .hello {
     font-size: 3rem; 
     font-weight: 300;
     color: #0087ff;
+    animation-delay: 0.5s; /* Shorter delay */
 }
 
 .myName {
     font-size: 7rem; 
     color: #ffffff; 
     font-weight: 400; 
+    animation-delay: 1.5s; /* Shorter delay */
 }
 
 .subTitle {
@@ -37,8 +45,13 @@
     letter-spacing: 1px;
     color: rgba(255, 255, 255, 0.67);
     margin: 0.3rem 2rem 0 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards 2.5s; /* Shorter delay and duration */
 }
 
+.typed {
+    opacity: 1 !important; /* Ensure typed component is visible */
+}
 
 .introPara {
     font-weight: 300; 
@@ -47,10 +60,11 @@
     margin: 1rem 0; 
     color: rgba(255, 255, 255, 0.67);
     width: 60%;
+    animation-delay: 4s; /* Shorter delay */
 }
 
 .highlightColor {
-    color: rgb(0, 135, 255)
+    color: rgb(0, 135, 255);
 }
 
 .btn {
@@ -62,6 +76,7 @@
     font-size: 2rem; 
     cursor: pointer; 
     text-decoration: none;
+    animation-delay: 4.5s; /* Shorter delay */
 }
 
 .btn:hover {
@@ -79,8 +94,10 @@
         height: auto;
         width: 100%;
         padding: 1rem;
-        font-size: 2rem;
+        font-size: 1.5rem; /* Adjusted font size */
         justify-content: flex-start;
+        align-items: flex-start; /* Align items to the left */
+        text-align: left; /* Align text to the left */
     }
 
     .hello {
@@ -88,21 +105,52 @@
     }
 
     .myName {
-        font-size: 4rem;
+        font-size: 3rem; /* Adjusted font size */
     }
 
     .subTitle {
-        font-size: 2.5rem;
-        margin: 0.3rem 1rem 0 0;
+        font-size: 2rem; /* Adjusted font size */
+        margin: 0.3rem 0 0 0; /* Adjusted margin */
     }
 
     .introPara {
         font-size: 1rem;
-        width: 100%;
+        width: 100%; /* Full width */
     }
 
     .btn {
-        font-size: 1.5rem;
+        font-size: 1rem; /* Adjusted font size */
         padding: 0.5rem 1rem;
     }
 }
+
+@media (max-width: 480px) {
+    .hello {
+        font-size: 1.5rem;
+    }
+
+    .myName {
+        font-size: 2.5rem; /* Further adjusted font size */
+    }
+
+    .subTitle {
+        font-size: 1.5rem; /* Further adjusted font size */
+    }
+
+    .introPara {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem; /* Further adjusted font size */
+        padding: 0.5rem;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
