@@ -1,46 +1,34 @@
-#contactPage {
+#contact {
     min-height: calc(100vh - 4rem);
     width: 100vw; 
-    max-width: 60rem; 
+    max-width: 80rem; 
     margin: 0 auto; 
     text-align: center; 
     display: flex; 
     flex-direction: column;
     justify-content: center;
+    align-items: center; 
+    padding: 2rem 1rem;
 }
 
 .contactPageTitle {
-    font-size: 3rem; 
+    font-size: 3.5rem; 
+    color: #0087ff;
     margin-bottom: 1rem;
-}
-
-.clientDesc {
-    font-weight: 300; 
-    font-size: 1rem; 
-}
-
-.clientImgs {
-    margin: 1rem 0; 
-    display: flex; 
-    flex-wrap: wrap; 
-}
-
-.clientImg {
-    object-fit: cover; 
-    width: 23%; 
-    min-width: 9rem; 
-    margin: auto; 
-    padding: 0.25rem;
-}
-
-#clients {
-    padding: 2rem; 
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially slightly moved down */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .contactDesc {
     padding: 1rem; 
-    font-size: medium; 
+    font-size: 1.2rem; 
     font-weight: 300; 
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 60rem; 
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially slightly moved down */
+    transition: opacity 0.5s ease-out 0.5s, transform 0.5s ease-out 0.5s; /* Delay the transition */
 }
 
 .contactForm {
@@ -49,37 +37,131 @@
     flex-direction: column; 
     align-items: center;
     justify-content: center;
-    width: 90vw; 
+    width: 100%; 
     max-width: 60rem; 
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially slightly moved down */
+    transition: opacity 0.5s ease-out 1s, transform 0.5s ease-out 1s; /* Delay the transition */
 }
 
-.name, .email, .msg {
-    font-size: medium; 
+.contactInput, .contactMessage {
+    font-size: 1.2rem; 
     width: 100%; 
-    max-width: 40rem; 
-    margin: 0.5rem; 
-    padding: 0.5rem 1rem; 
-    color: white; 
+    margin: 0.75rem 0; 
+    padding: 1rem 1.5rem; 
+    color: #002f69; 
     border: none; 
-    background: black; 
+    border-radius: 1rem;
+    background: #fff; 
+}
+
+.contactInput::placeholder, .contactMessage::placeholder {
+    color: #002f69;
 }
 
 .submitBtn {
-    background: blue; 
+    background: #0087ff; 
     border: none; 
-    padding: 0.75rem 3.5rem; 
-    border-radius: 0.5rem; 
-    margin: 2rem; 
+    padding: 1rem 4rem; 
+    border-radius: 1rem; 
+    margin: 1.5rem 0; 
+    color: white;
+    font-size: 1.2rem; 
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submitBtn:hover {
+    background: #006bbd; 
 }
 
 .links {
     display: flex; 
-    flex-wrap: wrap; 
+    justify-content: center;
+    margin-top: 2rem;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially slightly moved down */
+    transition: opacity 0.5s ease-out 1.5s, transform 0.5s ease-out 1.5s; /* Delay the transition */
 }
 
-.link {
-    object-fit: cover; 
-    height: 3rem; 
-    width: 3rem; 
-    margin: 0 0.75rem;
+.linkIcon {
+    width: 3.5rem; 
+    height: 3.5rem; 
+    margin: 0 1rem; 
+    cursor: pointer;
+    transition: transform 0.3s;
 }
+
+.linkIcon:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    font-size: 1rem; 
+    color: white;
+    background: #0087ff;
+    width: 100%;
+    text-align: center;
+}
+
+.fadeIn {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+@media (max-width: 768px) {
+    #contact {
+        padding: 2rem 1rem;
+    }
+
+    .contactPageTitle {
+        font-size: 2.5rem;
+    }
+
+    .contactDesc {
+        font-size: 1rem;
+    }
+
+    .contactInput, .contactMessage {
+        font-size: 1rem;
+    }
+
+    .submitBtn {
+        font-size: 1rem;
+        padding: 0.75rem 2rem;
+    }
+
+    .linkIcon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactPageTitle {
+        font-size: 2rem;
+    }
+
+    .contactDesc {
+        font-size: 0.9rem;
+    }
+
+    .contactInput, .contactMessage {
+        font-size: 0.9rem;
+    }
+
+    .submitBtn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .linkIcon {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+
+
