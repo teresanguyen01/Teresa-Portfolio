@@ -9,9 +9,9 @@ const jobs = [
         title: 'Software Engineer Intern',
         period: 'June 2024 - August 2024',
         details: [
-          'Engineered a surgical robot chatbot, improving knowledge sharing via building retrieval augmented generation chains using Langchain, Chromadb, Large Language Models for back-end, and Gradio for front-end',
-          'Enhanced log analysis interface by developing algorithms for 10+ feature/debugging tickets and conducted code reviews using Python, Jira, and Stash in a Scrum team using Agile Methodology, delivering robust, time-efficient solutions',
-          'Architected and deployed PowerBI databases, optimizing the linkage between parent tickets, notification codes, and keywords which significantly improved debugging efficiency, triage processes, and ticket classification accuracy'
+          'Developed a chatbot prototype for the Medtronic surgical robot using Large Language Models (LLMs)',
+          'Enhanced log analysis tool effectiveness by 10% by implementing over 10 algorithms for efficient debugging of surgical robot issues, working within a Scrum team to deliver robust solutions',
+          'Architected a PowerBI database, significantly improving the issue triage process and classification accuracy'
         ]
       }
     ]

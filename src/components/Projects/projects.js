@@ -72,7 +72,7 @@ const Projects = () => {
             <img src={HugoChatbot} alt="Hugo Chatbot" className="projectImg" />
             <h3 className="projectTitle">Medtronic Hugo RAS Chatbot</h3>
             <p className="projectDesc">
-              Developed a <span className="highlight">chatbot</span> prototype from scratch using retrieval-augmented generation chains built with <span className="highlight">LangChain</span>, <span className="highlight">ChromaDB</span>, and Gemma2 for the back-end, and implemented <span className="highlight">Gradio</span> for the front-end.
+              Developed a <span className="highlight">chatbot</span> for Medtronic's Hugo RAS system using <span className="highlight">Large Language Models (LLMs)</span>
             </p>
           </div>
           <div className="project">
