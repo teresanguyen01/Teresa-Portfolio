@@ -46,7 +46,7 @@ const jobs = [
     name: 'XCentium',
     positions: [
       {
-        title: 'Data Analyst and Marketing Intern',
+        title: 'Data Analyst Intern',
         period: 'August 2022 - August 2023',
         details: [
           'Communicated with the marketing team and clients to deliver recommendations regarding company-consumer interaction, such as ways to improve clicks by analyzing direct and organic searches',
