@@ -90,7 +90,7 @@ const Projects = () => {
             </p>
           </div>
           <div className="project">
-            <img src={MarkovProj} alt="Markov Chain Project" className="projectImg" />
+            <img src={MarkovProj} alt="Markov Chain Labor Force Project" className="projectImg" />
             <h3 className="projectTitle">Mapping Labor Force Trends using a Markov Chain Calculator</h3>
             <p className="projectDesc">
               Produced a Markov chain calculator in <span className="highlight">MATLAB</span> capable of computing transition and probability matrices with user-friendly inputs, generating various graphs such as heatmaps and transition diagrams.
