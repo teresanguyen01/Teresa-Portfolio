@@ -1,7 +1,4 @@
 # Teresa Nguyen's Portfolio Website
-
-Welcome to my portfolio website! This site showcases my work, experiences, and projects.
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
@@ -10,7 +7,7 @@ Welcome to my portfolio website! This site showcases my work, experiences, and p
 - [Usage](#usage)
 
 ## Introduction
-This is my personal portfolio website where I highlight my educational background, work experiences, and projects. It serves as a digital resume and a place to showcase my skills and achievements.
+This is my personal portfolio website where I highlight my educational background, work experiences, and projects. It serves as a digital resume and a place to showcase my skills and achievements. Hope you all enjoy going through it! :) 
 
 ## Features
 - **Home Page**: Introduction and summary of my skills and interests.
