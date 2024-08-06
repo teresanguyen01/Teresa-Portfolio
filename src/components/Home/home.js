@@ -16,7 +16,7 @@ const Home = () => {
           <Typed strings={['Researcher.', 'Developer.', 'Engineer.', 'Tech Enthusiast.', 'Dog Lover.']} typeSpeed={40} backSpeed={50} loop startDelay={1500} />
         </div>
         <div className="introPara fadeIn">
-          I currently am a <span className="highlightColor">Yale</span> student studying statistics, data science, and computer science. My passion lies in healthcare technology, where I aim to leverage engineering to <span className="highlightColor">enhance</span> and <span className="highlightColor">transform</span> lives.
+          I currently am a <span className="highlightColor">Yale</span> student studying statistics, data science, and computer science. My interests lie in healthcare technology and technology in general, where I aim to leverage engineering to <span className="highlightColor">enhance</span> and <span className="highlightColor">transform</span> lives.
         </div>
         <a href="https://drive.google.com/file/d/1pQzWNzZ8uxveQasjbXoQbroWM7fx2vPa/view?usp=sharing" className="btn">Resume</a>
       </div>
